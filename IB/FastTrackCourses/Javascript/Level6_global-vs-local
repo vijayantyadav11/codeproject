@@ -1,0 +1,15 @@
+True
+ Scope determines the accessibility of variables, objects, and functions from different parts of the code.
+ Function arguments (parameters) work as local variables inside functions.
+ We can use variables with same name inside multiple fucntions.
+
+ False
+  If we assign a value to a variable that has not been declared, it will become a GLOBAL variable always.
+
+
+
+Notes:
+
+  The lifetime of a JavaScript variable starts when it is declared. In a web browser, global variables are deleted when you close the browser window (or tab).
+
+Note: If we assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable. But now-a-days all modern browsers support running JavaScript in “Strict Mode”. In “Strict Mode”, undeclared variables are not automatically global.

@@ -1,0 +1,6 @@
+-10
+
+Explanantion:
+
+A variable declared using ‘var’ can be redefined and even redeclared anywhere throughout its scope.
+A variable declared using ‘let’ can be redefined within its scope but cannot be re-declared within its scope.

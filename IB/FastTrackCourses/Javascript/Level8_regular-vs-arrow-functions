@@ -1,0 +1,34 @@
+// Find the output for the given code below.
+
+let obj = {
+    a: 100,
+    fun1() {
+        let a = 20;
+        let fun2 = () => {
+            console.log(this.a);
+        }
+        fun2();
+    }
+}
+
+obj.fun1();
+
+Ans : 100
+
+
+Explanation
+
+
+// The value of this inside an arrow function remains the same throughout the lifecycle of the function and is always bound to the value of this in the closest non-arrow parent function.
+
+// In the following example, fun1() is an outer regular function of fun2() arrow function:
+
+// const obj = {
+//   fun1(items) {
+//     console.log(this); // prints obj
+//     const fun2 = () => {
+//       console.log(this); // prints obj
+//    };
+//   }
+// };
+// this value inside the arrow function fun2() equals to this value of the outer function fun1()
